@@ -4,11 +4,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <meta name="viewport" content="width=50, initial-scale=1">
 <style>
+    .pep {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #EBDEF0;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+}
+    .hi {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  }
+
     * {box-sizing: border-box;}
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
 }
 .center{
     text-align: center;
@@ -34,16 +58,14 @@ img {
 </div>
 <div style="padding-left:16px">
 
+
     <img src="https://assets.econsultancy.com/images/0009/2694/product_page_gif_nike.gif" alt="Paris" class="center" width="500" height="500">
 
-<p> <a href="{{url_for('product')}}"> pink tech fleece </a></p>
+<p style="text-align: center;"> <a href="{{url_for('product')}}"> <button class="pep">pink tech fleece </button></a></p>
 
-<p> <a href="{{url_for('product2')}}"> blue tech fleece </a></p>
-
-<p> <a href="{{url_for('product3')}}"> grey tech fleece </a></p>
-
-
-<p> <a href="{{url_for('cart')}}"> cart </a></p>
+<p style="text-align: center;"> <a href="{{url_for('product2')}}"> <button class="pep">blue tech fleece </button></a></p>
+<p style="text-align: center;"> <a href="{{url_for('product3')}}"> <button class="pep">grey tech fleece </button></a></p>
+<p style="text-align: center;"> <a href="{{url_for('cart')}}"> <button class="hi">cart </button></a></p>
 
 </body>
 </html>
